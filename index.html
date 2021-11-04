@@ -11,10 +11,22 @@
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="./style.css">
-    <title>Document</title>
+    <title>Unsplash</title>
 </head>
 
 <body>
+    <!-- preloader -->
+    <div class="wrapper ">
+        <span class="circle circle-1"></span>
+        <span class="circle circle-2"></span>
+        <span class="circle circle-3"></span>
+        <span class="circle circle-4"></span>
+        <span class="circle circle-5"></span>
+        <span class="circle circle-6"></span>
+        <span class="circle circle-7"></span>
+        <span class="circle circle-8"></span>
+    </div>
+    <!-- preloader -->
     <!-- header-section start -->
     <header class="top-header" id="top-header">
         <div class="container top-menu">
@@ -61,20 +73,18 @@
     <i class="fas fa-arrow-circle-up" onclick="topFunction()" id="myBtn"></i>
     <!-- scroll top  right bottom btn -->
     <!-- pop up modal -->
-    <div class="modal-box">
+    <div class="modal-box automatic-popUp">
         <div class="cookies-container" id="cookies-container">
             <div class="cookiesContent" id="cookiesPopup">
                 <button class="close" onclick="closemodal()">✖</button>
-                <img src="https://www.flaticon.com/svg/static/icons/svg/2913/2913782.svg" alt="cookies-img" />
-                <p>We use cookies for improving user experience, analytics and marketing.</p>
+                <i class="far fa-check-circle right-tick"></i>
+                <i class="fas fa-atom"></i>
+                <p>We use cookies for improving user experience.</p>
                 <button class="accept">That's fine!</button>
             </div>
         </div>
     </div>
-
     <!-- pop up modal -->
-
-
     <!-- header-section end -->
     <div class="top-outter-div">
         <div class="container wrapper-container">
@@ -94,8 +104,8 @@
                                 atque? Repellat veniam, qui maxime tempora quae delectus facilis nam nostrum eos. Quas qui quisquam sint earum mollitia accusamus unde itaque suscipit adipisci, quod distinctio provident. Libero reiciendis quis atque debitis.
                                 Molestias ipsa minima alias ab aut, explicabo, earum doloremque quis corrupti suscipit perspiciatis repellat. Ea fugit saepe neque at perspiciatis ad. Tempore, illo? Inventore porro explicabo quibusdam nobis suscipit ducimus.</p>
                         </div>
-                        <div class="col-md-4 about-bg">
-                            <img src="./images/ben-sweet-2LowviVHZ-E-unsplash.jpg" alt="" class="about-right-img">
+                        <div class="col-md-4 about-bg about-right">
+                            <img src="./images/ben-sweet-2LowviVHZ-E-unsplash.jpg" alt="" class="about-right-img ">
                         </div>
                     </div>
                 </div>
@@ -227,6 +237,9 @@
                 </div>
             </div>
             <!-- interests-section-end -->
+            <!-- line chart section start -->
+            <div id="chartContainer" style="height: 300px; width: 100%;"></div>
+            <!-- line chart section end -->
             <!-- testimonials section start -->
             <div class="testimonials testimonials-div section-div" id="testimonials">
                 <div class="testimonials-section" id="testimonials-section">
@@ -343,96 +356,6 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- <div class="row slider">
-                                <div class="col-md-3">
-                                    <div class="testimonial">
-                                        <div class="pic">
-                                            <img src="./ivana-la-URwn2r6O9xo-unsplash.jpg" alt="">
-                                        </div>
-                                        <h3 class="title text-center">Lorem ipsum dolor</h3>
-                                        <p class="description text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi non ante porttitor.</p>
-                                        <div class="testimonial-content flex-div">
-                                            <div class="testimonial-profile">
-                                                <h3 class="name">williamson</h3>
-                                                <span class="post">Web Developer</span>
-                                            </div>
-                                            <ul class="rating">
-                                                <li class="fa fa-star"></li>
-                                                <li class="fa fa-star"></li>
-                                                <li class="fa fa-star"></li>
-                                                <li class="fa fa-star"></li>
-                                                <li class="fa fa-star-half-empty"></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-3">
-                                    <div class="testimonial">
-                                        <div class="pic">
-                                            <img src="./ivana-la-URwn2r6O9xo-unsplash.jpg" alt="">
-                                        </div>
-                                        <h3 class="title text-center">Lorem ipsum dolor</h3>
-                                        <p class="description text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi non ante porttitor.</p>
-                                        <div class="testimonial-content flex-div">
-                                            <div class="testimonial-profile">
-                                                <h3 class="name">williamson</h3>
-                                                <span class="post">Web Developer</span>
-                                            </div>
-                                            <ul class="rating">
-                                                <li class="fa fa-star"></li>
-                                                <li class="fa fa-star"></li>
-                                                <li class="fa fa-star"></li>
-                                                <li class="fa fa-star"></li>
-                                                <li class="fa fa-star-half-empty"></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-3">
-                                    <div class="testimonial">
-                                        <div class="pic">
-                                            <img src="./ivana-la-URwn2r6O9xo-unsplash.jpg" alt="">
-                                        </div>
-                                        <h3 class="title text-center">Lorem ipsum dolor</h3>
-                                        <p class="description text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi non ante porttitor.</p>
-                                        <div class="testimonial-content flex-div">
-                                            <div class="testimonial-profile">
-                                                <h3 class="name">williamson</h3>
-                                                <span class="post">Web Developer</span>
-                                            </div>
-                                            <ul class="rating">
-                                                <li class="fa fa-star"></li>
-                                                <li class="fa fa-star"></li>
-                                                <li class="fa fa-star"></li>
-                                                <li class="fa fa-star"></li>
-                                                <li class="fa fa-star-half-empty"></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-3">
-                                    <div class="testimonial">
-                                        <div class="pic">
-                                            <img src="./ivana-la-URwn2r6O9xo-unsplash.jpg" alt="">
-                                        </div>
-                                        <h3 class="title text-center">Lorem ipsum dolor</h3>
-                                        <p class="description text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi non ante porttitor.</p>
-                                        <div class="testimonial-content flex-div">
-                                            <div class="testimonial-profile">
-                                                <h3 class="name">williamson</h3>
-                                                <span class="post">Web Developer</span>
-                                            </div>
-                                            <ul class="rating">
-                                                <li class="fa fa-star"></li>
-                                                <li class="fa fa-star"></li>
-                                                <li class="fa fa-star"></li>
-                                                <li class="fa fa-star"></li>
-                                                <li class="fa fa-star-half-empty"></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div> -->
                     </div>
                 </div>
             </div>
@@ -494,6 +417,12 @@
                 </div>
             </div>
             <!-- services section end -->
+
+            <!-- map section start -->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d224345.83923192866!2d77.06889754725782!3d28.52758200617607!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd5b347eb62d%3A0x52c2b7494e204dce!2sNew%20Delhi%2C%20Delhi!5e0!3m2!1sen!2sin!4v1635063954512!5m2!1sen!2sin"
+                class="map" width="100%" height="460" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <!-- map section end -->
+
             <!-- contact section start -->
             <div class="contact " id="contact-1">
                 <div class="contact-section" id="contact-section">
@@ -538,11 +467,11 @@
 
                 <div class="col-md-4">
                     <h3 class="title">CONTACT US</h3>
-                    <form action="" class="contact-form">
+                    <form action="" onsubmit="return validation()" class="contact-form">
                         <input type="text" class="username" id="username" placeholder="Enter your Name">
-                        <input type="text" class="username" id="username" placeholder="Enter a valid email address">
+                        <input type="text" class="email" id="email" placeholder="Enter a valid email address">
                         <textarea name="" id="message" cols="30" rows="5" class="message"></textarea>
-                        <button class="btn-1">SUBMIT</button>
+                        <button class="btn-1" autocomplete="off">SUBMIT</button>
                     </form>
                 </div>
                 <div class="col-md-1"></div>
@@ -556,12 +485,11 @@
         </div>
     </div>
     <!-- footer-section-end -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js" integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
     <script src="./javascript.js"></script>
-
-
 </body>
 
 </html>
