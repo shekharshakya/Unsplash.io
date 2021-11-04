@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- header-section start -->
+    <header class="top-header" id="top-header">
+        <div class="container top-menu">
+            <div class="flex-div">
+                <div class="top-left-logo">
+                    <i class="fab fa-asymmetrik"></i>
+                </div>
+                <div class="nav-menu top-right-menu flex-div">
+                    <i class="fas fa-align-justify" id="open-menu" onclick="openmenu()"></i>
+                    <ul class="navlists flex-div" id="navlists">
+                        <li class="navitem">
+                            <a href="" class="navlink">Home</a>
+                        </li>
+                        <li class="navitem">
+                            <a href="#about" class="navlink">About</a>
+                        </li>
+                        <li class="navitem">
+                            <a href="#services" class="navlink">Services</a>
+                        </li>
+                        <li class="navitem">
+                            <a href="#testimonial" class="navlink">Testimonials</a>
+                        </li>
+                        <li class="navitem">
+                            <a href="#contact" class="navlink">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="banner-text">
+                <div class="banner-cover">
+                    <h1 class="banner-title  company-name">
+                        Unsplash
+                    </h1>
+                    <h4>The internet’s source of <span>freely-usable.</span> <br> Powered by creators everywhere.</h4>
+                    <div class="search-box" id="search-box">
+                        <i class="fas fa-search"></i>
+                        <input type="text" class="search-input" id="search-input" placeholder="Search">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- scroll top  right bottom btn -->
+    <i class="fas fa-arrow-circle-up" onclick="topFunction()" id="myBtn"></i>
+    <!-- scroll top  right bottom btn -->
+    <!-- pop up modal -->
+    <div class="modal-box">
+        <div class="cookies-container" id="cookies-container">
+            <div class="cookiesContent" id="cookiesPopup">
+                <button class="close" onclick="closemodal()">✖</button>
+                <img src="https://www.flaticon.com/svg/static/icons/svg/2913/2913782.svg" alt="cookies-img" />
+                <p>We use cookies for improving user experience, analytics and marketing.</p>
+                <button class="accept">That's fine!</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- pop up modal -->
+
+
+    <!-- header-section end -->
+    <div class="top-outter-div">
+        <div class="container wrapper-container">
+            <!-- about-section-start -->
+            <div class="about  section-div" id="about">
+                <div class="about-container" id="about-container">
+                    <div class="title-section">
+                        <a id="about">
+                        </a>
+                        <h2 class="title ">ABOUT</h2>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-8 ">
+                            <p class="about-details">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit necessitatibus eligendi harum? Adipisci officiis saepe debitis dicta vel quos rem dolorem, ea atque iste minima, eius animi harum? Necessitatibus, quasi? Reiciendis,
+                                quaerat in, debitis temporibus distinctio similique, corporis ex quasi quibusdam deserunt ipsam quod velit eos explicabo? Mollitia, corporis ad. Recusandae hic odit exercitationem, voluptates dolorem sequi beatae natus
+                                quibusdam? Facilis praesentium nemo, culpa enim aperiam itaque at neque soluta officiis in facere veritatis incidunt. Expedita omnis quis eum, in temporibus excepturi sapiente repudiandae cum numquam, dolorum officiis reprehenderit
+                                atque? Repellat veniam, qui maxime tempora quae delectus facilis nam nostrum eos. Quas qui quisquam sint earum mollitia accusamus unde itaque suscipit adipisci, quod distinctio provident. Libero reiciendis quis atque debitis.
+                                Molestias ipsa minima alias ab aut, explicabo, earum doloremque quis corrupti suscipit perspiciatis repellat. Ea fugit saepe neque at perspiciatis ad. Tempore, illo? Inventore porro explicabo quibusdam nobis suscipit ducimus.</p>
+                        </div>
+                        <div class="col-md-4 about-bg">
+                            <img src="./images/ben-sweet-2LowviVHZ-E-unsplash.jpg" alt="" class="about-right-img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- about-section-end -->
+            <!-- skill-section-start -->
+            <div class="skill  section-div" id="skill">
+                <div class="skill-section" id="skill-section">
+                    <div class="title-section">
+                        <h2 class="title">SKILLS</h2>
+                    </div>
+                    <div class="skill-container">
+                        <div class="row">
+                            <div class="col-md-3 col-sm-6">
+                                <div class="counter">
+                                    <div class="counter-icon">
+                                        <i class="fab fa-js-square"></i>
+                                    </div>
+                                    <span class="counter-value">956</span>
+                                    <h3>JavaScript</h3>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6">
+                                <div class="counter blue">
+                                    <div class="counter-icon">
+                                        <i class="fab fa-html5"></i>
+                                    </div>
+                                    <span class="counter-value">903</span>
+                                    <h3>html</h3>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6">
+                                <div class="counter ">
+                                    <div class="counter-icon">
+                                        <i class="fab fa-css3-alt"></i>
+                                    </div>
+                                    <span class="counter-value">897</span>
+                                    <h3>css</h3>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6">
+                                <div class="counter blue">
+                                    <div class="counter-icon">
+                                        <i class="fab fa-bootstrap"></i>
+                                    </div>
+                                    <span class="counter-value">945</span>
+                                    <h3>bootstrap</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- skill-section-end -->
+            <!-- interests-section-start -->
+            <div class="interest  section-div">
+                <div class="interests-section" id="interests-section">
+                    <div class="title-section">
+                        <h2 class="title">INTERESTS</h2>
+                    </div>
+                    <div id="interest">
+                        <div class="row ">
+                            <div class=" col-md-3 col-sm-6 col-6 ">
+                                <div class="interest-item">
+                                    <i class="fas fa-biohazard  text-success"></i><strong>lorem ipsum</strong>
+                                </div>
+                            </div>
+                            <div class=" col-md-3  col-sm-6 col-6">
+                                <div class="interest-item">
+                                    <i class="far fa-calendar-minus text-warning"></i><strong>lorem ipsum</strong>
+                                </div>
+                            </div>
+                            <div class=" col-md-3  col-sm-6 col-6">
+                                <div class="interest-item">
+                                    <i class="fas fa-warehouse text-info"></i><strong>lorem ipsum</strong>
+                                </div>
+                            </div>
+                            <div class=" col-md-3  col-sm-6 col-6">
+                                <div class="interest-item">
+                                    <i class="fas fa-paint-roller text-primary"></i><strong>lorem ipsum</strong>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class=" col-md-3  col-sm-6 col-6">
+                                <div class="interest-item">
+                                    <i class="far fa-dot-circle text-warning"></i><strong>lorem ipsum</strong>
+                                </div>
+                            </div>
+                            <div class=" col-md-3  col-sm-6 col-6">
+                                <div class="interest-item">
+                                    <i class="fas fa-cloud text-primary"></i><strong>lorem ipsum</strong>
+                                </div>
+                            </div>
+                            <div class=" col-md-3  col-sm-6 col-6">
+                                <div class="interest-item">
+                                    <i class="fas fa-database text-danger"></i><strong>lorem ipsum</strong>
+                                </div>
+                            </div>
+                            <div class=" col-md-3  col-sm-6 col-6">
+                                <div class="interest-item">
+                                    <i class="fas fa-chess  text-success"></i><strong>lorem ipsum</strong>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class=" col-md-3  col-sm-6 col-6">
+                                <div class="interest-item">
+                                    <i class="fas fa-anchor text-primary"></i><strong>lorem ipsum</strong>
+                                </div>
+                            </div>
+                            <div class=" col-md-3  col-sm-6 col-6">
+                                <div class="interest-item">
+                                    <i class="fas fa-bullseye text-warning"></i><strong>lorem ipsum</strong>
+                                </div>
+                            </div>
+                            <div class=" col-md-3  col-sm-6 col-6">
+                                <div class="interest-item">
+                                    <i class="fas fa-wifi text-danger"></i><strong>lorem ipsum</strong>
+                                </div>
+                            </div>
+                            <div class=" col-md-3  col-sm-6 col-6">
+                                <div class="interest-item">
+                                    <i class="fas fa-fingerprint text-success"></i><strong>lorem ipsum</strong>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- interests-section-end -->
+            <!-- testimonials section start -->
+            <div class="testimonials testimonials-div section-div" id="testimonials">
+                <div class="testimonials-section" id="testimonials-section">
+                    <div class="title-section">
+                        <a id="testimonial">
+                        </a>
+                        <h2 class="title">TESTIMONIALS</h2>
+                    </div>
+                    <!-- slider-testimonials -->
+                    <div class="testimonial-slider">
+                        <div class="testimonial-container">
+                            <div class="row slider">
+                                <div class="col-md-4">
+                                    <div id="testimonial-slider" class="owl-carousel">
+                                        <div class="testimonial">
+                                            <div class="testimonial-content">
+                                                <p class="description">
+                                                    " Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium cum cumque dolore ducimus est exercitationem explicabo molestiae, velit! Eum nam porro voluptate. A aliquid asperiores assumenda consectetur cum dolore doloremque eius error fugiat
+                                                    id in ipsam ipsum laborum libero minus nam. "
+                                                </p>
+                                            </div>
+                                            <div class="pic">
+                                                <img src="./images/ivana-la-URwn2r6O9xo-unsplash.jpg" alt="">
+                                            </div>
+                                            <h3 class="testimonial-title">Williamson</h3>
+                                            <span class="post">Web Designer</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div id="testimonial-slider" class="owl-carousel">
+                                        <div class="testimonial">
+                                            <div class="testimonial-content">
+                                                <p class="description">
+                                                    " Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium cum cumque dolore ducimus est exercitationem explicabo molestiae, velit! Eum nam porro voluptate. A aliquid asperiores assumenda consectetur cum dolore doloremque eius error fugiat
+                                                    id in ipsam ipsum laborum libero minus nam. "
+                                                </p>
+                                            </div>
+                                            <div class="pic">
+                                                <img src="./images/ivana-la-URwn2r6O9xo-unsplash.jpg" alt="">
+                                            </div>
+                                            <h3 class="testimonial-title">Williamson</h3>
+                                            <span class="post">Web Designer</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div id="testimonial-slider" class="owl-carousel">
+                                        <div class="testimonial">
+                                            <div class="testimonial-content">
+                                                <p class="description">
+                                                    " Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium cum cumque dolore ducimus est exercitationem explicabo molestiae, velit! Eum nam porro voluptate. A aliquid asperiores assumenda consectetur cum dolore doloremque eius error fugiat
+                                                    id in ipsam ipsum laborum libero minus nam. "
+                                                </p>
+                                            </div>
+                                            <div class="pic">
+                                                <img src="./images/ivana-la-URwn2r6O9xo-unsplash.jpg" alt="">
+                                            </div>
+                                            <h3 class="testimonial-title">Williamson</h3>
+                                            <span class="post">Web Designer</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div id="testimonial-slider" class="owl-carousel">
+                                        <div class="testimonial">
+                                            <div class="testimonial-content">
+                                                <p class="description">
+                                                    " Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium cum cumque dolore ducimus est exercitationem explicabo molestiae, velit! Eum nam porro voluptate. A aliquid asperiores assumenda consectetur cum dolore doloremque eius error fugiat
+                                                    id in ipsam ipsum laborum libero minus nam. "
+                                                </p>
+                                            </div>
+                                            <div class="pic">
+                                                <img src="./images/ivana-la-URwn2r6O9xo-unsplash.jpg" alt="">
+                                            </div>
+                                            <h3 class="testimonial-title">Williamson</h3>
+                                            <span class="post">Web Designer</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div id="testimonial-slider" class="owl-carousel">
+                                        <div class="testimonial">
+                                            <div class="testimonial-content">
+                                                <p class="description">
+                                                    " Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium cum cumque dolore ducimus est exercitationem explicabo molestiae, velit! Eum nam porro voluptate. A aliquid asperiores assumenda consectetur cum dolore doloremque eius error fugiat
+                                                    id in ipsam ipsum laborum libero minus nam. "
+                                                </p>
+                                            </div>
+                                            <div class="pic">
+                                                <img src="./images/ivana-la-URwn2r6O9xo-unsplash.jpg" alt="">
+                                            </div>
+                                            <h3 class="testimonial-title">Williamson</h3>
+                                            <span class="post">Web Designer</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div id="testimonial-slider" class="owl-carousel">
+                                        <div class="testimonial">
+                                            <div class="testimonial-content">
+                                                <p class="description">
+                                                    " Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium cum cumque dolore ducimus est exercitationem explicabo molestiae, velit! Eum nam porro voluptate. A aliquid asperiores assumenda consectetur cum dolore doloremque eius error fugiat
+                                                    id in ipsam ipsum laborum libero minus nam. "
+                                                </p>
+                                            </div>
+                                            <div class="pic">
+                                                <img src="./images/ivana-la-URwn2r6O9xo-unsplash.jpg" alt="">
+                                            </div>
+                                            <h3 class="testimonial-title">Williamson</h3>
+                                            <span class="post">Web Designer</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="row slider">
+                                <div class="col-md-3">
+                                    <div class="testimonial">
+                                        <div class="pic">
+                                            <img src="./ivana-la-URwn2r6O9xo-unsplash.jpg" alt="">
+                                        </div>
+                                        <h3 class="title text-center">Lorem ipsum dolor</h3>
+                                        <p class="description text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi non ante porttitor.</p>
+                                        <div class="testimonial-content flex-div">
+                                            <div class="testimonial-profile">
+                                                <h3 class="name">williamson</h3>
+                                                <span class="post">Web Developer</span>
+                                            </div>
+                                            <ul class="rating">
+                                                <li class="fa fa-star"></li>
+                                                <li class="fa fa-star"></li>
+                                                <li class="fa fa-star"></li>
+                                                <li class="fa fa-star"></li>
+                                                <li class="fa fa-star-half-empty"></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="testimonial">
+                                        <div class="pic">
+                                            <img src="./ivana-la-URwn2r6O9xo-unsplash.jpg" alt="">
+                                        </div>
+                                        <h3 class="title text-center">Lorem ipsum dolor</h3>
+                                        <p class="description text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi non ante porttitor.</p>
+                                        <div class="testimonial-content flex-div">
+                                            <div class="testimonial-profile">
+                                                <h3 class="name">williamson</h3>
+                                                <span class="post">Web Developer</span>
+                                            </div>
+                                            <ul class="rating">
+                                                <li class="fa fa-star"></li>
+                                                <li class="fa fa-star"></li>
+                                                <li class="fa fa-star"></li>
+                                                <li class="fa fa-star"></li>
+                                                <li class="fa fa-star-half-empty"></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="testimonial">
+                                        <div class="pic">
+                                            <img src="./ivana-la-URwn2r6O9xo-unsplash.jpg" alt="">
+                                        </div>
+                                        <h3 class="title text-center">Lorem ipsum dolor</h3>
+                                        <p class="description text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi non ante porttitor.</p>
+                                        <div class="testimonial-content flex-div">
+                                            <div class="testimonial-profile">
+                                                <h3 class="name">williamson</h3>
+                                                <span class="post">Web Developer</span>
+                                            </div>
+                                            <ul class="rating">
+                                                <li class="fa fa-star"></li>
+                                                <li class="fa fa-star"></li>
+                                                <li class="fa fa-star"></li>
+                                                <li class="fa fa-star"></li>
+                                                <li class="fa fa-star-half-empty"></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="testimonial">
+                                        <div class="pic">
+                                            <img src="./ivana-la-URwn2r6O9xo-unsplash.jpg" alt="">
+                                        </div>
+                                        <h3 class="title text-center">Lorem ipsum dolor</h3>
+                                        <p class="description text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi non ante porttitor.</p>
+                                        <div class="testimonial-content flex-div">
+                                            <div class="testimonial-profile">
+                                                <h3 class="name">williamson</h3>
+                                                <span class="post">Web Developer</span>
+                                            </div>
+                                            <ul class="rating">
+                                                <li class="fa fa-star"></li>
+                                                <li class="fa fa-star"></li>
+                                                <li class="fa fa-star"></li>
+                                                <li class="fa fa-star"></li>
+                                                <li class="fa fa-star-half-empty"></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> -->
+                    </div>
+                </div>
+            </div>
+            <!-- testimonials section end -->
+            <!-- services section start -->
+            <div class="services  section-div" id="services">
+                <div class="services-section" id="services-section">
+                    <div class="title-section">
+                        <a id="services">
+                        </a>
+                        <h2 class="title">SERVICES</h2>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-4 col-md-4  col-12">
+                            <div class="services-item">
+                                <i class="far fa-file"></i>
+                                <h3 class="service-name">Nemo Enira</h3>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab, veniam voluptas a maxime tempore odit dolorum dolorem quasiX.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4  col-12">
+                            <div class="services-item">
+                                <i class="fas fa-basketball-ball"></i>
+                                <h3 class="service-name">Nemo Enira</h3>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab, veniam voluptas a maxime tempore odit dolorum dolorem quasiX.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4  col-12">
+                            <div class="services-item">
+                                <i class="fas fa-globe-asia"></i>
+                                <h3 class="service-name">Nemo Enira</h3>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab, veniam voluptas a maxime tempore odit dolorum dolorem quasiX.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-4 col-md-4  col-12">
+                            <div class="services-item">
+                                <i class="fas fa-tv"></i>
+                                <h3 class="service-name">Nemo Enira</h3>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab, veniam voluptas a maxime tempore odit dolorum dolorem quasiX.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4  col-12">
+                            <div class="services-item">
+                                <i class="fas fa-torii-gate"></i>
+                                <h3 class="service-name">Nemo Enira</h3>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab, veniam voluptas a maxime tempore odit dolorum dolorem quasiX.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4  col-12">
+                            <div class="services-item">
+                                <i class="fas fa-headset"></i>
+                                <h3 class="service-name">Nemo Enira</h3>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab, veniam voluptas a maxime tempore odit dolorum dolorem quasiX.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- services section end -->
+            <!-- contact section start -->
+            <div class="contact " id="contact-1">
+                <div class="contact-section" id="contact-section">
+                    <div class="title-section">
+                        <a id="contact"></a>
+                        <h2 class="contact-title">CONTACT</h2>
+                    </div>
+                </div>
+            </div>
+            <!-- contact section end -->
+        </div>
+    </div>
+    <div class="cont-info-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h3 class="title">
+                        GET IN TOUCH
+                    </h3>
+                    <p>we can ansure realiability, low cost fares and most important, with safety and comfort in mind.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima aliquid quibusdam sunt voluptas! Quas consequatur, deserunt quod maiores omnis, esse praesentium, voluptatem recusandae laudantium repudiandae dolores quasi</p>
+                    <i class="fab fa-facebook contact-icon"></i>
+                    <i class="fab fa-instagram-square contact-icon"></i>
+                    <i class="fab fa-twitter-square contact-icon"></i>
+                    <i class="fab fa-youtube contact-icon"></i>
+                    <i class="fab fa-skype contact-icon"></i>
+                </div>
+                <div class="col-md-3 cont-info">
+                    <strong>CALL US</strong>
+                    <p>1-234-567-098</p>
+                    <p>1-234-567-098</p>
+                    <strong>LOCATION</strong>
+                    <p>121 Rock Street,21 Avenue,</p>
+                    <p>New York,NY 92103-9000</p>
+                    <strong>OUR TOP SERVICES</strong>
+                    <ul class="service-list">
+                        <li class="service-item"><i class="fas fa-angle-right" style="margin-right: 5px;"></i>Local Transfer</li>
+                        <li class="service-item"><i class="fas fa-angle-right" style="margin-right: 5px;"></i>Airport Transfer</li>
+                        <li class="service-item"><i class="fas fa-angle-right" style="margin-right: 5px;"></i>Excursions and Tours</li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4">
+                    <h3 class="title">CONTACT US</h3>
+                    <form action="" class="contact-form">
+                        <input type="text" class="username" id="username" placeholder="Enter your Name">
+                        <input type="text" class="username" id="username" placeholder="Enter a valid email address">
+                        <textarea name="" id="message" cols="30" rows="5" class="message"></textarea>
+                        <button class="btn-1">SUBMIT</button>
+                    </form>
+                </div>
+                <div class="col-md-1"></div>
+            </div>
+        </div>
+    </div>
+    <!-- footer-section-start -->
+    <div class="footer-section" id="footer-section">
+        <div class="container">
+            © 2018-2021 All rights reserved.
+        </div>
+    </div>
+    <!-- footer-section-end -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js" integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./javascript.js"></script>
+
+
+</body>
+
+</html>
